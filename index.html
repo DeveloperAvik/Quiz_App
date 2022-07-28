@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Window Object</h1>
+    <p>The answer is : Paris</p>
+    <script>
+      // window.document.body.style.backgroundColor = "red";
+      // const num1 = window.prompt("Enter first number: ");
+      // const num2 = window.prompt("Enter second number: ");
+
+      // const sum = parseInt(num1) + parseInt(num2);
+
+      // document.write("The sum of " + num1 + " and " + num2 + " is " + sum);
+
+      window.document.write("<h1>Quiz App</h1>");
+      window.document.write("<p>What is the capital of France?</p>");
+      window.document.write("<input type='text' id='answer1' />");
+      window.document.write("<button onclick='checkAnswer1()'>Submit</button>");
+
+      function checkAnswer1() {
+        var answer = window.document.getElementById("answer1").value;
+        if (answer == "Paris") {
+          window.document.write("<p>Correct!</p>");
+        } else {
+          window.document.write("<p>Incorrect!</p>");
+        }
+      }
+    </script>
+  </body>
+</html>
